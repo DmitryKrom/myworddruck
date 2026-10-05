@@ -3,10 +3,15 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 	"os/exec"
 	"runtime"
 	"time"
 
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
 	ole "github.com/go-ole/go-ole"
 	"github.com/go-ole/go-ole/oleutil"
 )
@@ -25,6 +30,10 @@ func main() {
 	if len(druckerListe) == 0 {
 		fmt.Println("Keine Drucker gefunden !!!")
 	}
+	_, _ = verzeichnisAndDruckerWahl(druckerListe)
+
+	os.Exit(1)
+
 	runtime.LockOSThread()
 	defer runtime.UnlockOSThread()
 
@@ -136,4 +145,40 @@ func listPrinters() ([]printer, error) {
 	fmt.Println("#############################################")
 
 	return drucker, nil
+}
+
+func verzeichnisAndDruckerWahl(d []printer) (string, string) {
+	var verz verzeichnis
+
+	app := app.NewWithID("druck")
+	window := app.NewWindow("Ausdruck")
+
+	window.Resize(fyne.Size{Width: 500, Height: 600})
+	// window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
+	druckerName, err := fillUpDruckerButtons(window, d)
+	if err != nil {
+		return err.Error(), " "
+	}
+	window.ShowAndRun()
+
+	return druckerName, verz.pfad
+}
+
+func fillUpDruckerButtons(w fyne.Window, druckerListe []printer) (string, error) {
+	if len(druckerListe) < 1 {
+		return "", fmt.Errorf("Druckerliste ist leer !!!")
+	}
+	var druckerName string
+	var objcts = make([]fyne.CanvasObject, 1)
+	objcts[0] = widget.NewLabel("Wählen Sie einen Drucker !")
+	for i := range druckerListe {
+		btn := widget.NewButton(druckerListe[i].name, func() {
+			druckerName = druckerListe[i].name
+			w.Close()
+		})
+		objcts = append(objcts, btn)
+	}
+
+	w.SetContent(container.NewVBox(objcts...))
+	return druckerName, nil
 }
