@@ -5,12 +5,16 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"runtime"
 	"time"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/data/binding"
+	"fyne.io/fyne/v2/dialog"
+	"fyne.io/fyne/v2/storage"
 	"fyne.io/fyne/v2/widget"
 	ole "github.com/go-ole/go-ole"
 	"github.com/go-ole/go-ole/oleutil"
@@ -153,7 +157,7 @@ func verzeichnisAndDruckerWahl(d []printer) (string, string) {
 	app := app.NewWithID("druck")
 	window := app.NewWindow("Ausdruck")
 
-	window.Resize(fyne.Size{Width: 500, Height: 600})
+	window.Resize(fyne.Size{Width: 1200, Height: 600})
 	// window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
 	druckerName, err := fillUpDruckerButtons(window, d)
 	if err != nil {
@@ -169,16 +173,99 @@ func fillUpDruckerButtons(w fyne.Window, druckerListe []printer) (string, error)
 		return "", fmt.Errorf("Druckerliste ist leer !!!")
 	}
 	var druckerName string
-	var objcts = make([]fyne.CanvasObject, 1)
-	objcts[0] = widget.NewLabel("Wählen Sie einen Drucker !")
+	var printBtns = make([]fyne.CanvasObject, 1)
+	dirPath, err := filepath.Abs("C://Users")
+	if err != nil {
+		fmt.Println("Error resolving project path", err)
+	}
+
+	dirURI := storage.NewFileURI(dirPath)
+	dir, err := storage.ListerForURI(dirURI)
+	if err != nil {
+		fmt.Println("Error opening project", err)
+	}
+
+	lab := widget.NewLabel(dirPath)
+	fileTree := binding.NewURITree()
+
+	files := widget.NewTreeWithData(
+		fileTree,
+		func(branch bool) fyne.CanvasObject {
+			return widget.NewLabel("Name")
+		},
+		func(data binding.DataItem, branch bool, obj fyne.CanvasObject) {
+			l := obj.(*widget.Label)
+			u, _ := data.(binding.URI).Get()
+
+			l.SetText(u.Name())
+		},
+	)
+
+	files.OnSelected = func(id widget.TreeNodeID) {
+		u, err := fileTree.GetValue(id)
+		if err != nil {
+			dialog.ShowError(err, nil)
+			files.Unselect(id)
+			return
+		}
+		fmt.Println(u)
+
+		listable, err := storage.CanList(u)
+		if !listable || err != nil {
+			files.Unselect(id)
+			return
+		}
+
+		// _, err = g.openFile(u)
+		// if err != nil {
+		// 	dialog.ShowError(err, g.win)
+		// 	files.Unselect(id)
+		// }
+		fmt.Println("\t ", listable, "  u: ", u.Name())
+		next, _ := storage.ListerForURI(u)
+		addFilesToTree(next, fileTree, id)
+		lab.SetText(filepath.Dir(u.Name()))
+	}
+	fileTree.Set(map[string][]string{}, map[string]fyne.URI{})
+	addFilesToTree(dir, fileTree, binding.DataTreeRootID)
+
+	printBtns[0] = widget.NewLabel("Wählen Sie einen Drucker !")
 	for i := range druckerListe {
 		btn := widget.NewButton(druckerListe[i].name, func() {
 			druckerName = druckerListe[i].name
 			w.Close()
 		})
-		objcts = append(objcts, btn)
+		printBtns = append(printBtns, btn)
 	}
-
-	w.SetContent(container.NewVBox(objcts...))
+	c := container.NewVBox(
+		lab,
+		files,
+		container.NewHBox(printBtns...),
+	)
+	// w.SetContent(container.NewVBox(printBtns...))
+	w.SetContent(c)
 	return druckerName, nil
+}
+
+func addFilesToTree(dir fyne.ListableURI, tree binding.URITree, root string) {
+	items, _ := dir.List()
+	for _, uri := range items {
+		name := uri.Name()
+		if len(name) > 0 && (name[0] == '.' || name == "go.sum") {
+			continue
+		}
+		// pos := strings.LastIndex(name, ".gui.go")
+		// if pos != -1 && pos == len(name)-7 {
+		// 	continue
+		// }
+
+		nodeID := uri.String()
+		tree.Append(root, nodeID, uri)
+
+		_, err := storage.CanList(uri)
+		if err != nil {
+			log.Println("Failed to check for listing")
+		}
+
+	}
 }
