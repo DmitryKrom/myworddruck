@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"os/exec"
 	"runtime"
 	"time"
 
@@ -10,12 +11,24 @@ import (
 	"github.com/go-ole/go-ole/oleutil"
 )
 
-func main() {
+type printer struct {
+	name string
+}
+type verzeichnis struct {
+	pfad string
+}
 
+func main() {
+	fmt.Println("Starte mein Druck !!!")
+	// Drucker und Verzeichnis auswählen
+	druckerListe, err := listPrinters()
+	if len(druckerListe) == 0 {
+		fmt.Println("Keine Drucker gefunden !!!")
+	}
 	runtime.LockOSThread()
 	defer runtime.UnlockOSThread()
 
-	err := ole.CoInitialize(0)
+	err = ole.CoInitialize(0)
 	if err != nil {
 		log.Fatalf("Konnte OLE nicht initialisieren: %v", err)
 	}
@@ -84,4 +97,43 @@ func main() {
 	_, _ = oleutil.CallMethod(doc, "Close", 0)
 	_, _ = oleutil.CallMethod(word, "Quit")
 	fmt.Println("Word erfolgreich geschlossen.")
+}
+
+// listPrinters zeigt betriebssystemspezifisch die verfügbaren Drucker an,
+// damit der Nutzer einen gültigen Namen für -printer ermitteln kann.
+func listPrinters() ([]printer, error) {
+	var cmd *exec.Cmd
+	switch runtime.GOOS {
+	case "windows":
+		cmd = exec.Command("powershell", "-NoProfile", "-Command",
+			"Get-Printer | Select-Object -ExpandProperty Name")
+	default: // macOS und Linux nutzen beide CUPS
+		cmd = exec.Command("lpstat", "-p")
+	}
+
+	var drucker []printer
+	out, err := cmd.CombinedOutput()
+	if err != nil {
+		return nil, fmt.Errorf("%w\n%s", err, string(out))
+	}
+	var drName string
+	x := 0
+	for i := range out {
+		if string(out[i]) == "\r" {
+			drName = string(out[x : i+1])
+			// fmt.Println("drName: ", drName)
+			var d printer
+			d.name = drName
+			drucker = append(drucker, d)
+			i++
+			x = i + 1
+		}
+	}
+	fmt.Println("Verfügbare Drucker:")
+	for i := range drucker {
+		fmt.Println(drucker[i].name)
+	}
+	fmt.Println("#############################################")
+
+	return drucker, nil
 }
