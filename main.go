@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+
 	runtime.LockOSThread()
 	defer runtime.UnlockOSThread()
 
@@ -36,7 +37,7 @@ func main() {
 	// NEU: DRUCKERAUSWAHL FESTLEGEN
 	// Ersetze diesen Namen exakt durch den Namen deines Druckers aus Windows
 	// =========================================================================
-	wunschDrucker := "Canon MX720 series Printer"
+	wunschDrucker := ""
 
 	fmt.Printf("Wechsle aktiven Drucker zu: %s...\n", wunschDrucker)
 	_, err = oleutil.PutProperty(word, "ActivePrinter", wunschDrucker)
@@ -49,7 +50,7 @@ func main() {
 	documents := oleutil.MustGetProperty(word, "Documents").ToIDispatch()
 	defer documents.Release()
 
-	docPath := `C:\Users\agnie\Desktop\Steuerbescheid2026\Einspruch.docx`
+	docPath := ``
 	docVariant, err := oleutil.CallMethod(documents, "Open", docPath)
 	if err != nil {
 		log.Fatalf("Konnte Dokument nicht öffnen: %v", err)
