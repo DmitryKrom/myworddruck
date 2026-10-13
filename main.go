@@ -157,15 +157,17 @@ func verzeichnisAndDruckerWahl(_ []printer) (string, string) {
 	app := app.NewWithID("druck")
 	app.Settings().SetTheme(druckTheme())
 	window := app.NewWindow("Ausdruck")
-
+	window.SetPadded(false)
 	window.Resize(fyne.Size{Width: 1024, Height: 768})
 	// // window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
 	// druckerName, err := fillUpDruckerButtons(window, d)
 	// if err != nil {
 	// 	return err.Error(), " "
 	// }
+	ui := &gui{win: window}
+	window.SetContent(ui.makeGUI())
 
-	window.SetContent(makeGUI())
+	ui.openProject()
 	window.ShowAndRun()
 
 	return "druckerName", verz.pfad
