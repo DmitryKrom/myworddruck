@@ -151,21 +151,24 @@ func listPrinters() ([]printer, error) {
 	return drucker, nil
 }
 
-func verzeichnisAndDruckerWahl(d []printer) (string, string) {
+func verzeichnisAndDruckerWahl(_ []printer) (string, string) {
 	var verz verzeichnis
 
 	app := app.NewWithID("druck")
+	app.Settings().SetTheme(druckTheme())
 	window := app.NewWindow("Ausdruck")
 
-	window.Resize(fyne.Size{Width: 1200, Height: 600})
-	// window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
-	druckerName, err := fillUpDruckerButtons(window, d)
-	if err != nil {
-		return err.Error(), " "
-	}
+	window.Resize(fyne.Size{Width: 1024, Height: 768})
+	// // window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
+	// druckerName, err := fillUpDruckerButtons(window, d)
+	// if err != nil {
+	// 	return err.Error(), " "
+	// }
+
+	window.SetContent(makeGUI())
 	window.ShowAndRun()
 
-	return druckerName, verz.pfad
+	return "druckerName", verz.pfad
 }
 
 func fillUpDruckerButtons(w fyne.Window, druckerListe []printer) (string, error) {
