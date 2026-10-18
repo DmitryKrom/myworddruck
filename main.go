@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -34,7 +35,7 @@ func main() {
 	if len(druckerListe) == 0 {
 		fmt.Println("Keine Drucker gefunden !!!")
 	}
-	_, _ = verzeichnisAndDruckerWahl(druckerListe)
+	_, _, _ = verzeichnisAndDruckerWahl(druckerListe)
 
 	os.Exit(1)
 
@@ -151,7 +152,7 @@ func listPrinters() ([]printer, error) {
 	return drucker, nil
 }
 
-func verzeichnisAndDruckerWahl(_ []printer) (string, string) {
+func verzeichnisAndDruckerWahl(druckerListe []printer) (string, string, error) {
 	var verz verzeichnis
 
 	app := app.NewWithID("druck")
@@ -164,13 +165,44 @@ func verzeichnisAndDruckerWahl(_ []printer) (string, string) {
 	// if err != nil {
 	// 	return err.Error(), " "
 	// }
-	ui := &gui{win: window}
-	window.SetContent(ui.makeGUI())
+	ui := &gui{win: window, title: binding.NewString()}
+	window.SetContent(ui.makeGUI(druckerListe))
+	window.SetMainMenu(ui.makeMenu())
+	ui.title.AddListener(binding.NewDataListener(func() {
+		name, _ := ui.title.Get()
+		window.SetTitle(name)
+	}))
+	flag.Usage = func() {
+		fmt.Println("Usage: druck [project directory]")
+	}
+	flag.Parse()
+	if len(flag.Args()) > 0 {
+		dirPath := flag.Args()[0]
+		absDir, err := filepath.Abs(dirPath)
+		if err != nil {
+			return "", "", err
+		}
+		dirURI := storage.NewFileURI(absDir)
+		dir, err := storage.ListerForURI(dirURI)
+		if err != nil {
+			fmt.Println("Error opening project", err)
+			return "", "", err
+		}
+		ui.openProject(dir)
+	} else {
+		ui.openProjectDialog()
+	}
 
-	ui.openProject()
 	window.ShowAndRun()
 
-	return "druckerName", verz.pfad
+	return verz.pfad, " ", nil
+}
+
+func (g *gui) makeMenu() *fyne.MainMenu {
+	file := fyne.NewMenu("File",
+		fyne.NewMenuItem("Open Project", func() { _ = g.openProjectDialog }),
+	)
+	return fyne.NewMainMenu(file)
 }
 
 func fillUpDruckerButtons(w fyne.Window, druckerListe []printer) (string, error) {
