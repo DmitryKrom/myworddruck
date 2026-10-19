@@ -7,7 +7,6 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
-	"time"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
@@ -88,81 +87,87 @@ func (g *gui) print(drucker, von, bis string) {
 	if err != nil {
 		fmt.Println("[Error] lesen FileListe : ", err)
 	}
-	for i := range docListe {
 
-		runtime.LockOSThread()
-		defer runtime.UnlockOSThread()
+	runtime.LockOSThread()
+	defer runtime.UnlockOSThread()
 
-		err := ole.CoInitialize(0)
-		if err != nil {
-			log.Fatalf("Konnte OLE nicht initialisieren: %v", err)
-		}
-		defer ole.CoUninitialize()
-
-		unknown, err := oleutil.CreateObject("Word.Application")
-		if err != nil {
-			log.Fatalf("Word ist vermutlich nicht installiert: %v", err)
-		}
-		word, err := unknown.QueryInterface(ole.IID_IDispatch)
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer word.Release()
-
-		_, _ = oleutil.PutProperty(word, "Visible", false)
-
-		// =========================================================================
-		// NEU: DRUCKERAUSWAHL FESTLEGEN
-		// Ersetze diesen Namen exakt durch den Namen deines Druckers aus Windows
-		// =========================================================================
-		wunschDrucker := drucker
-
-		fmt.Printf("Wechsle aktiven Drucker zu: %s...\n", wunschDrucker)
-		_, err = oleutil.PutProperty(word, "ActivePrinter", wunschDrucker)
-		if err != nil {
-			log.Printf("Warnung: Konnte Drucker nicht explizit setzen (Prüfe den Namen): %v", err)
-			// Falls der Name falsch ist, nutzt Word standardmäßig den Windows-Standarddrucker
-		}
-		fmt.Printf("Wechsle aktiven Drucker 2 zu: %s...\n", wunschDrucker)
-		// 3. Dokument öffnen
-		documents := oleutil.MustGetProperty(word, "Documents").ToIDispatch()
-		defer documents.Release()
-
-		docPath := docListe[i]
-		docVariant, err := oleutil.CallMethod(documents, "Open", docPath)
-		if err != nil {
-			log.Fatalf("Konnte Dokument nicht öffnen: %v", err)
-		}
-		fmt.Printf("Wechsle aktiven Drucker 3 zu: %s...\n", wunschDrucker)
-		doc := docVariant.ToIDispatch()
-		defer doc.Release()
-
-		// 4. Nur die ersten zwei Seiten drucken
-		wdPrintFromTo := 3
-
-		fmt.Println("Sende Seiten 1-2 an den ausgewählten Drucker...")
-		_, err = oleutil.CallMethod(doc, "PrintOut",
-			false,         // Background: false wartet, bis die Daten im Spooler sind
-			false,         // Append
-			wdPrintFromTo, // Range: "Von-Bis" Bereich nutzen
-			"",            // OutputFileName
-			von,           // From: Startseite
-			bis,           // To: Endseite
-		)
-
-		if err != nil {
-			log.Printf("Fehler beim Drucken: %v", err)
-		} else {
-			fmt.Println("Druckauftrag erfolgreich übergeben.")
-		}
-
-		time.Sleep(2 * time.Second)
-
-		// 5. Aufräumen
-		_, _ = oleutil.CallMethod(doc, "Close", 0)
-		_, _ = oleutil.CallMethod(word, "Quit")
-		fmt.Println("Word erfolgreich geschlossen.")
+	err = ole.CoInitialize(0)
+	if err != nil {
+		log.Fatalf("Konnte OLE nicht initialisieren: %v", err)
 	}
+	defer ole.CoUninitialize()
+
+	unknown, err := oleutil.CreateObject("Word.Application")
+	if err != nil {
+		log.Fatalf("Word ist vermutlich nicht installiert: %v", err)
+	}
+	defer unknown.Release()
+
+	word, err := unknown.QueryInterface(ole.IID_IDispatch)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer word.Release()
+
+	// Word am Ende sauber beenden (läuft VOR den Releases, da defer LIFO)
+	defer func() {
+		_, _ = oleutil.CallMethod(word, "Quit", 0) // 0 = wdDoNotSaveChanges
+		fmt.Println("Word erfolgreich geschlossen.")
+	}()
+
+	_, _ = oleutil.PutProperty(word, "Visible", false)
+	_, _ = oleutil.PutProperty(word, "DisplayAlerts", 0) // keine Dialoge
+
+	// =========================================================================
+	// NEU: DRUCKERAUSWAHL FESTLEGEN
+	// Ersetze diesen Namen exakt durch den Namen deines Druckers aus Windows
+	// =========================================================================
+
+	fmt.Printf("Wechsle aktiven Drucker zu: %s...\n", drucker)
+	_, err = oleutil.PutProperty(word, "ActivePrinter", drucker)
+	if err != nil {
+		log.Printf("Warnung: Konnte Drucker nicht explizit setzen (Prüfe den Namen): %v", err)
+		// Falls der Name falsch ist, nutzt Word standardmäßig den Windows-Standarddrucker
+	}
+	// 3. Dokument öffnen
+	documents := oleutil.MustGetProperty(word, "Documents").ToIDispatch()
+	defer documents.Release()
+
+	for _, docPath := range docListe {
+		g.printOne(documents, docPath, von, bis)
+	}
+	fmt.Println("Word erfolgreich geschlossen.")
+}
+
+func (g *gui) printOne(documents *ole.IDispatch, docPath, von, bis string) {
+	docVariant, err := oleutil.CallMethod(documents, "Open", docPath)
+	if err != nil {
+		log.Printf("Konnte Dokument nicht öffnen (%s): %v", docPath, err)
+		return
+	}
+	doc := docVariant.ToIDispatch()
+	defer doc.Release()
+
+	const wdPrintFromTo = 3
+	fmt.Printf("Drucke %s, Seiten %s-%s\n", docPath, von, bis)
+
+	_, err = oleutil.CallMethod(doc, "PrintOut",
+		false,         // Background: false = warten
+		false,         // Append
+		wdPrintFromTo, // Range
+		"",            // OutputFileName
+		von,           // From
+		bis,           // To
+	)
+	if err != nil {
+		log.Printf("Fehler beim Drucken: %v", err)
+	} else {
+		fmt.Println("Druckauftrag erfolgreich übergeben.")
+	}
+
+	// Dokument schließen ohne Speichern
+	_, _ = oleutil.CallMethod(doc, "Close", 0)
+
 }
 
 // listPrinters zeigt betriebssystemspezifisch die verfügbaren Drucker an,
