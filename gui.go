@@ -25,26 +25,25 @@ type gui struct {
 	fileList binding.StringList
 }
 
-func makeBanner() fyne.CanvasObject {
+func (g *gui) makeBanner() fyne.CanvasObject {
 	toolbar := widget.NewToolbar(
-		widget.NewToolbarAction(theme.HomeIcon(), func() {}),
-		widget.NewToolbarAction(theme.CancelIcon(), func() {}),
-		widget.NewToolbarAction(theme.SearchIcon(), func() {}),
+		widget.NewToolbarAction(theme.HomeIcon(), func() { g.openProjectDialog() }),
+		widget.NewToolbarAction(theme.CancelIcon(), func() { g.win.Close() }),
 	)
 	logo := canvas.NewImageFromResource(nil)
 	logo.FillMode = canvas.ImageFillContain
 	return container.NewStack(toolbar, container.NewPadded(logo))
 }
 func (g *gui) makeGUI() fyne.CanvasObject {
-	top := makeBanner()
+	top := g.makeBanner()
 	folderWahl := widget.NewLabel("")
 	g.folder = folderWahl
 	druckerLable := widget.NewLabel("Ziel")
 	druckerCombobox := makeCombobox()
 	druckSeiten := widget.NewLabel("Seiten")
 	seitenEntry := widget.NewEntry()
-	seitenEntry.PlaceHolder = "z.B.: 1-2"
-	seitenEntry.SetText("1-2")
+	seitenEntry.PlaceHolder = "Nur Seiten 1 und 2 werden gedruckt. Änderung nicht möglich!!!"
+	seitenEntry.Disable()
 	g.fileList = binding.NewStringList()
 	g.files = widget.NewList(
 		func() int { return g.fileList.Length() },
@@ -62,12 +61,12 @@ func (g *gui) makeGUI() fyne.CanvasObject {
 		}
 		drucker := druckerCombobox.Text
 		seiten := seitenEntry.Text
-		var von, bis string
+		// var von, bis string
 
 		if strings.Contains(seiten, "-") {
-			von, bis, _ = strings.Cut(seiten, "-")
+			// von, bis, _ = strings.Cut(seiten, "-")
 		}
-		g.print(drucker, von, bis)
+		g.print(drucker, "1", "2")
 	})
 	druckCont := container.NewGridWithRows(20, druckerLable, druckerCombobox, druckSeiten, seitenEntry, druckButton)
 	// leftSide := widget.NewLabel("left")

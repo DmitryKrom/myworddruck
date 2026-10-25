@@ -31,7 +31,7 @@ func (d *druckThema) Color(name fyne.ThemeColorName, _ fyne.ThemeVariant) color.
 //	}
 func (d *druckThema) Size(name fyne.ThemeSizeName) float32 {
 	if name == theme.SizeNameText {
-		return 12
+		return 16
 	}
 	return d.Theme.Size(name)
 }

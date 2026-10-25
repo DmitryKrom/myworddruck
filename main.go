@@ -37,11 +37,7 @@ func newDruckApp(name string) *druckApp {
 	window := app.NewWindow(name)
 	window.SetPadded(false)
 	window.Resize(fyne.Size{Width: 1024, Height: 768})
-	// // window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
-	// druckerName, err := fillUpDruckerButtons(window, d)
-	// if err != nil {
-	// 	return err.Error(), " "
-	// }
+
 	ui := &gui{win: window, title: binding.NewString()}
 	window.SetContent(ui.makeGUI())
 	window.SetMainMenu(ui.makeMenu())
@@ -49,7 +45,6 @@ func newDruckApp(name string) *druckApp {
 		name, _ := ui.title.Get()
 		window.SetTitle(name)
 	}))
-	// fmt.Println(" --> ", ui.win.Canvas().Content())
 	d := &druckApp{g: *ui}
 	flag.Usage = func() {
 		fmt.Println("Usage: druck [project directory]")
@@ -209,52 +204,6 @@ func listPrinters() ([]printer, error) {
 	return drucker, nil
 }
 
-func verzeichnisAndDruckerWahl(druckerListe []printer) (string, string, error) {
-	var verz verzeichnis
-
-	app := app.NewWithID("druck")
-	app.Settings().SetTheme(druckTheme())
-	window := app.NewWindow("Ausdruck")
-	window.SetPadded(false)
-	window.Resize(fyne.Size{Width: 1024, Height: 768})
-	// // window.SetContent(widget.NewLabel("Wählen Sie einen Drucker !"))
-	// druckerName, err := fillUpDruckerButtons(window, d)
-	// if err != nil {
-	// 	return err.Error(), " "
-	// }
-	ui := &gui{win: window, title: binding.NewString()}
-	window.SetContent(ui.makeGUI())
-	window.SetMainMenu(ui.makeMenu())
-	ui.title.AddListener(binding.NewDataListener(func() {
-		name, _ := ui.title.Get()
-		window.SetTitle(name)
-	}))
-	flag.Usage = func() {
-		fmt.Println("Usage: druck [project directory]")
-	}
-	flag.Parse()
-	if len(flag.Args()) > 0 {
-		dirPath := flag.Args()[0]
-		absDir, err := filepath.Abs(dirPath)
-		if err != nil {
-			return "", "", err
-		}
-		dirURI := storage.NewFileURI(absDir)
-		dir, err := storage.ListerForURI(dirURI)
-		if err != nil {
-			fmt.Println("Error opening project", err)
-			return "", "", err
-		}
-		ui.openProject(dir)
-	} else {
-		ui.openProjectDialog()
-	}
-
-	window.ShowAndRun()
-
-	return verz.pfad, " ", nil
-}
-
 func (g *gui) makeMenu() *fyne.MainMenu {
 	file := fyne.NewMenu("File",
 		fyne.NewMenuItem("Open Project", g.openProjectDialog),
@@ -268,7 +217,7 @@ func fillUpDruckerButtons(w fyne.Window, druckerListe []printer) (string, error)
 	}
 	var druckerName string
 	var printBtns = make([]fyne.CanvasObject, 1)
-	dirPath, err := filepath.Abs("C://Users")
+	dirPath, err := filepath.Abs("C://")
 	if err != nil {
 		fmt.Println("Error resolving project path", err)
 	}
