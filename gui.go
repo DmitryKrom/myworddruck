@@ -90,6 +90,7 @@ func makeCombobox() *widget.SelectEntry {
 		printerListe = append(printerListe, druckerListe[i].name)
 	}
 	sel := widget.NewSelectEntry(printerListe)
+	fmt.Println(sel)
 	return sel
 }
 
