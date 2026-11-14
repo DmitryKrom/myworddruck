@@ -60,6 +60,10 @@ func (g *gui) makeGUI() fyne.CanvasObject {
 			return
 		}
 		drucker := druckerCombobox.Text
+		if drucker == "" || drucker == " " {
+			dialog.ShowError(fmt.Errorf("Wählen Sie einen Drucker !"), g.win)
+			return
+		}
 		seiten := seitenEntry.Text
 		// var von, bis string
 
@@ -90,7 +94,6 @@ func makeCombobox() *widget.SelectEntry {
 		printerListe = append(printerListe, druckerListe[i].name)
 	}
 	sel := widget.NewSelectEntry(printerListe)
-	fmt.Println(sel)
 	return sel
 }
 
@@ -127,11 +130,13 @@ func (g *gui) openProject(dir fyne.ListableURI) {
 		}
 		g.fileList.Set([]string{})
 		for i := range filesURIs {
-			di, _ := os.Stat(filesURIs[i].Path())
+			pathToFile := filesURIs[i].Path()
+			di, _ := os.Stat(pathToFile)
 			fmt.Println(filesURIs[i].Path(), " ", filesURIs[i].Extension() != ".docx")
 			if !di.IsDir() {
-				if filesURIs[i].Extension() == ".docx" || filesURIs[i].Extension() == ".doc" {
-					g.fileList.Append(filesURIs[i].Path())
+				if filesURIs[i].Extension() == ".docx" || filesURIs[i].Extension() == ".doc" ||
+					filesURIs[i].Extension() == ".DOCX" || filesURIs[i].Extension() == ".DOC" {
+					g.fileList.Append(pathToFile)
 				}
 			}
 		}
