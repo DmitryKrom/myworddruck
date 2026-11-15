@@ -7,6 +7,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
+	"strings"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
@@ -47,7 +48,7 @@ func newDruckApp(name string) *druckApp {
 	}))
 	d := &druckApp{g: *ui}
 	flag.Usage = func() {
-		fmt.Println("Usage: druck [project directory]")
+		Logger.Println("Usage: druck [project directory]")
 	}
 	flag.Parse()
 	if len(flag.Args()) > 0 {
@@ -59,7 +60,7 @@ func newDruckApp(name string) *druckApp {
 		dirURI := storage.NewFileURI(absDir)
 		dir, err := storage.ListerForURI(dirURI)
 		if err != nil {
-			fmt.Println("Error opening project", err)
+			Logger.Println("Error opening project", err)
 			return nil
 		}
 		d.g.openProject(dir)
@@ -73,14 +74,20 @@ func (a *druckApp) run() {
 }
 
 func main() {
+	if err := InitLogger(); err != nil {
+		panic(err)
+	}
+	Logger.Println("Programm gestartet !!!")
 	app := newDruckApp("Druck Vertrag")
 	app.run()
+	Logger.Println("Programm beendet !!!")
 }
 
 func (g *gui) print(drucker, von, bis string) {
+	drucker = strings.TrimSpace(drucker)
 	docListe, err := g.fileList.Get()
 	if err != nil {
-		fmt.Println("[Error] lesen FileListe : ", err)
+		Logger.Println("[Error] lesen FileListe : ", err)
 	}
 
 	runtime.LockOSThread()
@@ -88,63 +95,105 @@ func (g *gui) print(drucker, von, bis string) {
 
 	err = ole.CoInitialize(0)
 	if err != nil {
-		log.Fatalf("Konnte OLE nicht initialisieren: %v", err)
+		Logger.Fatalf("Konnte OLE nicht initialisieren: %v", err)
 	}
 	defer ole.CoUninitialize()
 
 	unknown, err := oleutil.CreateObject("Word.Application")
 	if err != nil {
-		log.Fatalf("Word ist vermutlich nicht installiert: %v", err)
+		Logger.Fatalf("Word ist vermutlich nicht installiert: %v", err)
 	}
 	defer unknown.Release()
 
 	word, err := unknown.QueryInterface(ole.IID_IDispatch)
 	if err != nil {
-		log.Fatal(err)
+		Logger.Fatal(err)
 	}
 	defer word.Release()
 
 	// Word am Ende sauber beenden (läuft VOR den Releases, da defer LIFO)
 	defer func() {
 		_, _ = oleutil.CallMethod(word, "Quit", 0) // 0 = wdDoNotSaveChanges
-		fmt.Println("Word erfolgreich geschlossen.")
+		Logger.Println("Word erfolgreich geschlossen.")
 	}()
-
 	_, _ = oleutil.PutProperty(word, "Visible", false)
 	_, _ = oleutil.PutProperty(word, "DisplayAlerts", 0) // keine Dialoge
+	version, err := oleutil.GetProperty(word, "Version")
+	if err == nil {
+		Logger.Printf("[Word-Version] : %s", version.ToString())
+		version.Clear()
+	}
+	activePrinter, err := oleutil.GetProperty(word, "ActivePrinter")
+	if err == nil {
+		Logger.Println("Active Printer : ", activePrinter.ToString())
+		activePrinter.Clear()
+		Logger.Println("Active Printer: Clear - Done !")
+		Logger.Println("Active Printer : ", activePrinter.ToString())
+	}
 
 	// =========================================================================
 	// NEU: DRUCKERAUSWAHL FESTLEGEN
 	// Ersetze diesen Namen exakt durch den Namen deines Druckers aus Windows
 	// =========================================================================
 
-	fmt.Printf("Wechsle aktiven Drucker zu: %s...\n", drucker)
-	_, err = oleutil.PutProperty(word, "ActivePrinter", drucker)
-	if err != nil {
-		log.Printf("Warnung: Konnte Drucker nicht explizit setzen (Prüfe den Namen): %v", err)
-		// Falls der Name falsch ist, nutzt Word standardmäßig den Windows-Standarddrucker
-	}
 	// 3. Dokument öffnen
 	documents := oleutil.MustGetProperty(word, "Documents").ToIDispatch()
 	defer documents.Release()
 
+	Logger.Printf("Wechsle aktiven Drucker zu: %s...\n", drucker)
+	// _, err = oleutil.PutProperty(word, "ActivePrinter", drucker)
+	// Windows-Standarddrucker auf HP setzen
+	script := fmt.Sprintf("Set-Printer -Name \"%s\"", drucker)
+	Logger.Println("Powershell: ", script)
+
+	cmd := exec.Command(
+		"powershell",
+		"-NoProfile",
+		"-Command",
+		script,
+	)
+
+	output, err := cmd.CombinedOutput()
+
+	Logger.Printf("PowerShell: %s", string(output))
+
+	// if err != nil {
+	// 	Logger.Printf("Standarddrucker setzen: %v", err)
+	// }
+	if err != nil {
+		Logger.Printf("Warnung: Konnte Drucker nicht explizit setzen (Prüfe den Namen): %v", err)
+		// Falls der Name falsch ist, nutzt Word standardmäßig den Windows-Standarddrucker
+		if oleErr, ok := err.(*ole.OleError); ok {
+			Logger.Printf("HRESULT: 0x%08X \n", uint32(oleErr.Code()))
+			Logger.Printf("Beschreibung: %s\n", oleErr.Description())
+			Logger.Printf("Quelle: %s\n", oleErr.String())
+			Logger.Println("SubError", oleErr.SubError().Error())
+		}
+	}
+	activePrinter, err = oleutil.GetProperty(word, "ActivePrinter")
+	if err == nil {
+		Logger.Println("Active Printer Nach Powershell : ", activePrinter.ToString())
+		activePrinter.Clear()
+		Logger.Println("Active Printer: Clear - Done !")
+		Logger.Println("Active Printer : ", activePrinter.ToString())
+	}
+	_, err = oleutil.PutProperty(word, "ActivePrinter", drucker)
 	for _, docPath := range docListe {
 		g.printOne(documents, docPath, von, bis)
 	}
-	fmt.Println("Word erfolgreich geschlossen.")
 }
 
 func (g *gui) printOne(documents *ole.IDispatch, docPath, von, bis string) {
 	docVariant, err := oleutil.CallMethod(documents, "Open", docPath)
 	if err != nil {
-		log.Printf("Konnte Dokument nicht öffnen (%s): %v", docPath, err)
+		Logger.Printf("Konnte Dokument nicht öffnen (%s): %v", docPath, err)
 		return
 	}
 	doc := docVariant.ToIDispatch()
 	defer doc.Release()
 
 	const wdPrintFromTo = 3
-	fmt.Printf("Drucke %s, Seiten %s-%s\n", docPath, von, bis)
+	Logger.Printf("Drucke %s, Seiten %s-%s\n", docPath, von, bis)
 
 	_, err = oleutil.CallMethod(doc, "PrintOut",
 		false,         // Background: false = warten
@@ -155,9 +204,9 @@ func (g *gui) printOne(documents *ole.IDispatch, docPath, von, bis string) {
 		bis,           // To
 	)
 	if err != nil {
-		log.Printf("Fehler beim Drucken: %v", err)
+		Logger.Printf("Fehler beim Drucken: %v", err)
 	} else {
-		fmt.Println("Druckauftrag erfolgreich übergeben.")
+		Logger.Printf("Druckauftrag erfolgreich uebergeben. Datei: %s ", docPath)
 	}
 
 	// Dokument schließen ohne Speichern
@@ -197,9 +246,11 @@ func listPrinters() ([]printer, error) {
 	}
 	fmt.Println("Verfügbare Drucker:")
 	for i := range drucker {
-		fmt.Println(drucker[i].name)
+		Logger.SetPrefix("[Verfuegbare Drucker]")
+		Logger.Println(drucker[i].name)
+		Logger.SetPrefix("[Druck App]")
 	}
-	fmt.Println("#############################################")
+	// fmt.Println("#############################################")
 
 	return drucker, nil
 }

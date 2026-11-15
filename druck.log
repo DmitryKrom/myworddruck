@@ -1,0 +1,727 @@
+[Druck App] 2026/11/15 16:30:58 main.go:79: Programm gestartet !!!
+[Druck App] 2026/11/15 16:31:00 main.go:206: PDF24
+[Druck App] 2026/11/15 16:31:00 main.go:206: OneNote for Windows 10
+[Druck App] 2026/11/15 16:31:00 main.go:206: OneNote (Desktop)
+[Druck App] 2026/11/15 16:31:00 main.go:206: Microsoft XPS Document Writer
+[Druck App] 2026/11/15 16:31:00 main.go:206: Microsoft Print to PDF
+[Druck App] 2026/11/15 16:31:00 main.go:206: HP252BFD (HP DeskJet 4300 series)
+[Druck App] 2026/11/15 16:31:00 main.go:206: Fax
+[Druck App] 2026/11/15 16:31:00 main.go:206: Canon MX720 series Printer
+[Druck App] 2026/11/15 16:31:00 main.go:206: Canon MX720 series FAX
+[Druck App] 2026/11/15 16:31:00 main.go:206: Canon MX390 series Printer
+[Druck App] 2026/11/15 16:31:00 main.go:206: Canon MX390 series FAX
+[Druck App] 2026/11/15 16:31:50 main.go:118: Active Printer :  HP252BFD (HP DeskJet 4300 series)  //  HP252BFD (HP DeskJet 4300 series)
+[Druck App] 2026/11/15 16:31:50 main.go:127: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App] 2026/11/15 16:31:50 main.go:130: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App] 2026/11/15 16:31:53 main.go:166: Druckauftrag erfolgreich 체bergeben.
+[Druck App] 2026/11/15 16:31:53 main.go:140: Word erfolgreich geschlossen.
+[Druck App] 2026/11/15 16:31:53 main.go:115: Word erfolgreich geschlossen.
+[Druck App] 2026/11/15 16:31:56 main.go:118: Active Printer :  HP252BFD (HP DeskJet 4300 series)  //  HP252BFD (HP DeskJet 4300 series)
+[Druck App] 2026/11/15 16:31:56 main.go:127: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App] 2026/11/15 16:31:56 main.go:130: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App] 2026/11/15 16:31:58 main.go:166: Druckauftrag erfolgreich 체bergeben.
+[Druck App] 2026/11/15 16:31:58 main.go:140: Word erfolgreich geschlossen.
+[Druck App] 2026/11/15 16:31:58 main.go:115: Word erfolgreich geschlossen.
+[Druck App] 2026/11/15 16:34:39 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 16:42:02 main.go:79: Programm gestartet !!!
+[Druck App] 2026/11/15 16:42:05 main.go:205: PDF24
+[Druck App] 2026/11/15 16:42:05 main.go:205: OneNote for Windows 10
+[Druck App] 2026/11/15 16:42:05 main.go:205: OneNote (Desktop)
+[Druck App] 2026/11/15 16:42:05 main.go:205: Microsoft XPS Document Writer
+[Druck App] 2026/11/15 16:42:05 main.go:205: Microsoft Print to PDF
+[Druck App] 2026/11/15 16:42:05 main.go:205: HP252BFD (HP DeskJet 4300 series)
+[Druck App] 2026/11/15 16:42:05 main.go:205: Fax
+[Druck App] 2026/11/15 16:42:05 main.go:205: Canon MX720 series Printer
+[Druck App] 2026/11/15 16:42:05 main.go:205: Canon MX720 series FAX
+[Druck App] 2026/11/15 16:42:05 main.go:205: Canon MX390 series Printer
+[Druck App] 2026/11/15 16:42:05 main.go:205: Canon MX390 series FAX
+[Druck App] 2026/11/15 16:42:32 main.go:118: Active Printer :  HP252BFD (HP DeskJet 4300 series)  //  HP252BFD (HP DeskJet 4300 series)
+[Druck App] 2026/11/15 16:42:32 main.go:127: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App] 2026/11/15 16:42:32 main.go:130: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App] 2026/11/15 16:42:33 main.go:152: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App] 2026/11/15 16:42:34 main.go:165: Druckauftrag erfolgreich 체bergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App] 2026/11/15 16:42:34 main.go:115: Word erfolgreich geschlossen.
+[Druck App] 2026/11/15 16:43:05 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 16:59:10 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: PDF24
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Fax
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 16:59:12 main.go:206: Canon MX390 series FAX
+[Druck App]2026/11/15 16:59:29 main.go:118: Active Printer :  Canon MX720 series Printer
+[Druck App]2026/11/15 16:59:29 main.go:127: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 16:59:29 main.go:130: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 16:59:30 main.go:152: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 16:59:32 main.go:165: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 16:59:32 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 17:01:02 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 17:15:35 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 17:15:37 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 17:16:01 main.go:119: Active Printer :  Canon MX720 series Printer
+[Druck App]2026/11/15 17:16:01 main.go:121: Active Printer: Clear - Done !
+[Druck App]2026/11/15 17:16:01 main.go:122: Active Printer :  
+[Druck App]2026/11/15 17:16:01 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 17:16:01 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 17:16:02 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 17:16:04 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 17:16:04 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 17:16:36 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 17:44:01 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 17:44:04 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 17:44:14 main.go:121: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 17:44:14 main.go:123: Active Printer: Clear - Done !
+[Druck App]2026/11/15 17:44:14 main.go:124: Active Printer :  
+[Druck App]2026/11/15 17:44:14 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 17:44:14 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 17:44:15 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 17:44:16 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 17:44:17 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 17:45:28 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 17:46:15 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 17:46:17 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 17:46:32 main.go:121: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 17:46:32 main.go:123: Active Printer: Clear - Done !
+[Druck App]2026/11/15 17:46:32 main.go:124: Active Printer :  
+[Druck App]2026/11/15 17:46:32 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 17:46:32 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 17:46:32 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 17:46:33 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 17:46:34 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 17:47:14 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 17:48:23 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 17:48:25 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 17:48:36 main.go:121: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 17:48:36 main.go:123: Active Printer: Clear - Done !
+[Druck App]2026/11/15 17:48:36 main.go:124: Active Printer :  
+[Druck App]2026/11/15 17:48:36 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 17:48:36 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 17:48:36 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 17:48:37 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 17:48:37 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 17:52:14 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 17:52:38 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 17:52:40 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 17:52:59 main.go:121: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 17:52:59 main.go:123: Active Printer: Clear - Done !
+[Druck App]2026/11/15 17:52:59 main.go:124: Active Printer :  
+[Druck App]2026/11/15 17:52:59 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 17:52:59 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 17:53:00 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 17:53:01 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 17:53:01 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 17:56:11 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 17:59:26 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 17:59:28 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 17:59:44 main.go:121: Active Printer :  Canon MX720 series Printer
+[Druck App]2026/11/15 17:59:44 main.go:123: Active Printer: Clear - Done !
+[Druck App]2026/11/15 17:59:44 main.go:124: Active Printer :  
+[Druck App]2026/11/15 17:59:44 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 17:59:44 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 17:59:45 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 17:59:47 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 17:59:47 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 18:00:25 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 18:01:18 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: PDF24
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Fax
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 18:01:20 main.go:211: Canon MX390 series FAX
+[Druck App]2026/11/15 18:01:33 main.go:121: Active Printer :  Canon MX720 series Printer
+[Druck App]2026/11/15 18:01:33 main.go:123: Active Printer: Clear - Done !
+[Druck App]2026/11/15 18:01:33 main.go:124: Active Printer :  
+[Druck App]2026/11/15 18:01:33 main.go:132: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 18:01:33 main.go:135: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 18:01:34 main.go:157: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 18:01:35 main.go:170: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 18:01:36 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 18:03:58 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 18:04:35 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: PDF24
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Fax
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 18:04:36 main.go:216: Canon MX390 series FAX
+[Druck App]2026/11/15 18:04:49 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 18:04:49 main.go:126: Active Printer :  Canon MX720 series Printer
+[Druck App]2026/11/15 18:04:49 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 18:04:49 main.go:129: Active Printer :  
+[Druck App]2026/11/15 18:04:49 main.go:137: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 18:04:49 main.go:140: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 18:04:50 main.go:162: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 18:04:52 main.go:175: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 18:04:52 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 18:13:13 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 18:16:01 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: PDF24
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Fax
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 18:16:04 main.go:216: Canon MX390 series FAX
+[Druck App]2026/11/15 18:17:15 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 18:17:15 main.go:126: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 18:17:15 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 18:17:15 main.go:129: Active Printer :  
+[Druck App]2026/11/15 18:17:15 main.go:137: Wechsle aktiven Drucker zu: Canon MX720 series Printer...
+[Druck App]2026/11/15 18:17:15 main.go:140: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 18:17:17 main.go:162: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 18:17:18 main.go:175: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 18:17:19 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 18:17:37 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:11:51 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: PDF24
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Fax
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:11:53 main.go:231: Canon MX390 series FAX
+[Druck App]2026/11/15 19:12:10 main.go:136: [Word-Version] : 16.0
+[Druck App]2026/11/15 19:12:11 main.go:141: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 19:12:11 main.go:143: Active Printer: Clear - Done !
+[Druck App]2026/11/15 19:12:11 main.go:144: Active Printer :  
+[Druck App]2026/11/15 19:12:11 main.go:152: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 19:12:11 main.go:155: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:12:15 main.go:177: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 19:12:17 main.go:190: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 19:12:17 main.go:130: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 19:13:08 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:14:32 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: PDF24
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Fax
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:14:34 main.go:231: Canon MX390 series FAX
+[Druck App]2026/11/15 19:14:59 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:15:08 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Canon MX390 series FAX
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Fax
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:15:09 main.go:231: PDF24
+[Druck App]2026/11/15 19:15:25 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:15:57 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Canon MX390 series FAX
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Canon MX720 series FAX
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Fax
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:15:59 main.go:231: PDF24
+[Druck App]2026/11/15 19:16:22 main.go:136: [Word-Version] : 16.0
+[Druck App]2026/11/15 19:16:22 main.go:141: Active Printer :  Canon MX720 series Printer
+[Druck App]2026/11/15 19:16:22 main.go:143: Active Printer: Clear - Done !
+[Druck App]2026/11/15 19:16:22 main.go:144: Active Printer :  
+[Druck App]2026/11/15 19:16:22 main.go:152: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 19:16:22 main.go:155: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:16:23 main.go:177: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 19:16:24 main.go:190: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 19:16:24 main.go:130: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 19:19:10 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:19:17 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: PDF24
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: Fax
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:19:19 main.go:231: Canon MX390 series FAX
+[Druck App]2026/11/15 19:19:41 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:25:34 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: PDF24
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: Fax
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:25:36 main.go:219: Canon MX390 series FAX
+[Druck App]2026/11/15 19:25:58 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 19:25:58 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 19:25:58 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 19:25:58 main.go:129: Active Printer :  
+[Druck App]2026/11/15 19:25:58 main.go:137: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 19:25:58 main.go:140: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:25:58 main.go:143: HRESULT: 0x80020009
+[Druck App]2026/11/15 19:25:59 main.go:165: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 19:26:02 main.go:178: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 19:26:02 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 19:27:50 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:31:21 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: PDF24
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: Fax
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:31:23 main.go:222: Canon MX390 series FAX
+[Druck App]2026/11/15 19:31:42 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 19:31:42 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 19:31:42 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 19:31:42 main.go:129: Active Printer :  
+[Druck App]2026/11/15 19:31:42 main.go:137: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 19:31:42 main.go:140: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:31:42 main.go:143: HRESULT: 0x80020009 
+[Druck App]2026/11/15 19:31:42 main.go:144: Beschreibung: Druckerfehler.
+[Druck App]2026/11/15 19:31:42 main.go:145: Quelle: Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:31:42 main.go:146: SubError Druckerfehler.
+[Druck App]2026/11/15 19:31:43 main.go:168: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 19:31:45 main.go:181: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 19:31:45 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 19:32:08 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 19:49:54 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: PDF24
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: Fax
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: Canon MX390 series Printer
+[Verfuegbare Drucker]2026/11/15 19:49:55 main.go:223: Canon MX390 series FAX
+[Druck App]2026/11/15 19:50:07 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 19:50:07 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 19:50:07 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 19:50:07 main.go:129: Active Printer :  
+[Druck App]2026/11/15 19:50:07 main.go:141: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 19:50:07 main.go:144: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:50:07 main.go:147: HRESULT: 0x80020009 
+[Druck App]2026/11/15 19:50:07 main.go:148: Beschreibung: Druckerfehler.
+[Druck App]2026/11/15 19:50:07 main.go:149: Quelle: Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:50:07 main.go:150: SubError Druckerfehler.
+[Druck App]2026/11/15 19:50:08 main.go:169: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 19:50:09 main.go:182: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 19:50:10 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 19:51:19 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 19:51:19 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 19:51:19 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 19:51:19 main.go:129: Active Printer :  
+[Druck App]2026/11/15 19:51:19 main.go:141: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 19:51:19 main.go:144: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:51:19 main.go:147: HRESULT: 0x80020009 
+[Druck App]2026/11/15 19:51:19 main.go:148: Beschreibung: Druckerfehler.
+[Druck App]2026/11/15 19:51:19 main.go:149: Quelle: Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 19:51:19 main.go:150: SubError Druckerfehler.
+[Druck App]2026/11/15 19:51:20 main.go:169: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 19:51:21 main.go:182: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 19:51:21 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 19:51:34 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:01:23 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: PDF24
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: Fax
+[Verfuegbare Drucker]2026/11/15 20:01:25 main.go:251: Canon MX720 series Printer
+[Druck App]2026/11/15 20:01:43 main.go:136: Wechsle Drucker auf: HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 20:01:43 main.go:145: Druckerwechsel fehlgeschlagen: Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 20:01:43 main.go:148: HRESULT: 0x80020009
+[Druck App]2026/11/15 20:01:43 main.go:150: Beschreibung: Druckerfehler.
+[Druck App]2026/11/15 20:01:43 main.go:110: Word geschlossen.
+[Druck App]2026/11/15 20:02:18 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:05:33 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: PDF24
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: Fax
+[Verfuegbare Drucker]2026/11/15 20:05:35 main.go:257: Canon MX720 series Printer
+[Druck App]2026/11/15 20:05:45 main.go:137: Aktiver Drucker: PDF24
+[Druck App]2026/11/15 20:05:45 main.go:142: Wechsle Drucker auf: HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 20:05:46 main.go:151: Druckerwechsel fehlgeschlagen: Ausnahmefehler aufgetreten. (Druckerfehler.)
+[Druck App]2026/11/15 20:05:46 main.go:154: HRESULT: 0x80020009
+[Druck App]2026/11/15 20:05:46 main.go:156: Beschreibung: Druckerfehler.
+[Druck App]2026/11/15 20:05:46 main.go:110: Word geschlossen.
+[Druck App]2026/11/15 20:06:01 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:20:20 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: PDF24
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: Fax
+[Verfuegbare Drucker]2026/11/15 20:20:22 main.go:240: Canon MX720 series Printer
+[Druck App]2026/11/15 20:20:37 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:21:43 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: PDF24
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: Fax
+[Verfuegbare Drucker]2026/11/15 20:21:46 main.go:240: Canon MX720 series Printer
+[Druck App]2026/11/15 20:21:58 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:21:59 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 20:21:59 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:21:59 main.go:129: Active Printer :  
+[Druck App]2026/11/15 20:21:59 main.go:141: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:22:02 main.go:155: PowerShell: HP : Die Benennung "HP" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines 
+ausf갿rbaren Programms erkannt. 쉇erpr갽en Sie die Schreibweise des Namens, oder ob der Pfad korrekt ist 
+(sofern enthalten), und wiederholen Sie den Vorgang.
+In Zeile:1 Zeichen:29
++ Set-Printer -Name HP252BFD (HP DeskJet 4300 series)
++                             ~~
+    + CategoryInfo          : ObjectNotFound: (HP:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+[Druck App]2026/11/15 20:22:02 main.go:161: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): exit status 1
+[Druck App]2026/11/15 20:22:03 main.go:186: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:22:06 main.go:199: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:22:06 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 20:22:40 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:23:44 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: PDF24
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: Fax
+[Verfuegbare Drucker]2026/11/15 20:23:46 main.go:240: Canon MX720 series Printer
+[Druck App]2026/11/15 20:23:56 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:23:56 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 20:23:56 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:23:56 main.go:129: Active Printer :  
+[Druck App]2026/11/15 20:23:56 main.go:141: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:23:58 main.go:155: PowerShell: Set-Printer : Die Anfrage ist ung걄tig. 
+In Zeile:1 Zeichen:1
++ Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MSFT_Printer:ROOT/StandardCimv2/MSFT_Printer) [Set-Printe 
+   r], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041017,Set-Printer
+ 
+[Druck App]2026/11/15 20:23:58 main.go:161: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): exit status 1
+[Druck App]2026/11/15 20:23:59 main.go:186: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:24:01 main.go:199: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:24:02 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 20:24:32 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:25:36 main.go:79: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: PDF24
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: Fax
+[Verfuegbare Drucker]2026/11/15 20:25:38 main.go:241: Canon MX720 series Printer
+[Druck App]2026/11/15 20:25:46 main.go:121: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:25:46 main.go:126: Active Printer :  PDF24
+[Druck App]2026/11/15 20:25:46 main.go:128: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:25:46 main.go:129: Active Printer :  
+[Druck App]2026/11/15 20:25:46 main.go:141: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:25:46 main.go:145: Powershell:  Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)"
+[Druck App]2026/11/15 20:25:47 main.go:156: PowerShell: Set-Printer : Die Anfrage ist ung걄tig. 
+In Zeile:1 Zeichen:1
++ Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MSFT_Printer:ROOT/StandardCimv2/MSFT_Printer) [Set-Printe 
+   r], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041017,Set-Printer
+ 
+[Druck App]2026/11/15 20:25:47 main.go:162: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): exit status 1
+[Druck App]2026/11/15 20:25:48 main.go:187: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:25:50 main.go:200: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:25:50 main.go:115: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 20:26:16 main.go:82: Programm beendet !!!
+[Druck App] 2026/11/15 20:28:39 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: PDF24
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: Fax
+[Verfuegbare Drucker]2026/11/15 20:28:41 main.go:243: Canon MX720 series Printer
+[Druck App]2026/11/15 20:28:51 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:28:51 main.go:128: Active Printer :  PDF24
+[Druck App]2026/11/15 20:28:51 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:28:51 main.go:131: Active Printer :  
+[Druck App]2026/11/15 20:28:51 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:28:51 main.go:147: Powershell:  Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)"
+[Druck App]2026/11/15 20:28:52 main.go:158: PowerShell: Set-Printer : Die Anfrage ist ung걄tig. 
+In Zeile:1 Zeichen:1
++ Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MSFT_Printer:ROOT/StandardCimv2/MSFT_Printer) [Se 
+   t-Printer], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041017,Set-Printer
+ 
+[Druck App]2026/11/15 20:28:52 main.go:164: Warnung: Konnte Drucker nicht explizit setzen (Pr체fe den Namen): exit status 1
+[Druck App]2026/11/15 20:28:53 main.go:189: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:28:55 main.go:202: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:28:55 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 20:29:01 main.go:83: Programm beendet !!!
+[Druck App] 2026/11/15 20:30:44 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: PDF24
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: Fax
+[Verfuegbare Drucker]2026/11/15 20:30:49 main.go:243: Canon MX720 series Printer
+[Druck App]2026/11/15 20:31:02 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:31:02 main.go:128: Active Printer :  PDF24
+[Druck App]2026/11/15 20:31:02 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:31:02 main.go:131: Active Printer :  
+[Druck App]2026/11/15 20:31:02 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:31:02 main.go:147: Powershell:  Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)"
+[Druck App]2026/11/15 20:31:04 main.go:158: PowerShell: 
+[Druck App]2026/11/15 20:31:05 main.go:189: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:31:07 main.go:202: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:31:07 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 20:31:47 main.go:83: Programm beendet !!!
+[Druck App] 2026/11/15 20:34:48 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: PDF24
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: Fax
+[Verfuegbare Drucker]2026/11/15 20:34:50 main.go:250: Canon MX720 series Printer
+[Druck App]2026/11/15 20:35:20 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:35:20 main.go:128: Active Printer :  PDF24
+[Druck App]2026/11/15 20:35:20 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:35:20 main.go:131: Active Printer :  
+[Druck App]2026/11/15 20:35:20 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:35:20 main.go:147: Powershell:  Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)"
+[Druck App]2026/11/15 20:35:22 main.go:158: PowerShell: 
+[Druck App]2026/11/15 20:35:22 main.go:175: Active Printer Nach Powershell :  PDF24
+[Druck App]2026/11/15 20:35:22 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:35:22 main.go:178: Active Printer :  
+[Druck App]2026/11/15 20:35:23 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:35:24 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:35:25 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 20:36:32 main.go:83: Programm beendet !!!
+[Druck App] 2026/11/15 20:53:19 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: PDF24
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: Fax
+[Verfuegbare Drucker]2026/11/15 20:53:21 main.go:250: Canon MX720 series Printer
+[Druck App]2026/11/15 20:53:36 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 20:53:36 main.go:128: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 20:53:36 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:53:36 main.go:131: Active Printer :  
+[Druck App]2026/11/15 20:53:36 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 20:53:36 main.go:147: Powershell:  Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)"
+[Druck App]2026/11/15 20:53:38 main.go:158: PowerShell: 
+[Druck App]2026/11/15 20:53:38 main.go:175: Active Printer Nach Powershell :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 20:53:38 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 20:53:38 main.go:178: Active Printer :  
+[Druck App]2026/11/15 20:53:39 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 20:53:41 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 20:53:41 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 21:05:19 main.go:83: Programm beendet !!!
+[Druck App] 2026/11/15 21:07:58 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: PDF24
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: Fax
+[Verfuegbare Drucker]2026/11/15 21:08:00 main.go:250: Canon MX720 series Printer
+[Druck App]2026/11/15 21:08:10 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 21:08:10 main.go:128: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:08:10 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:08:10 main.go:131: Active Printer :  
+[Druck App]2026/11/15 21:08:10 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 21:08:10 main.go:175: Active Printer Nach Powershell :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:08:10 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:08:10 main.go:178: Active Printer :  
+[Druck App]2026/11/15 21:08:11 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 21:08:12 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 21:08:13 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 21:09:10 main.go:83: Programm beendet !!!
+[Druck App] 2026/11/15 21:11:28 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: Canon MX720 series Printer
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: Fax
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 21:11:30 main.go:250: PDF24
+[Druck App]2026/11/15 21:11:46 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 21:11:46 main.go:128: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:11:46 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:11:46 main.go:131: Active Printer :  
+[Druck App]2026/11/15 21:11:46 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 21:11:46 main.go:175: Active Printer Nach Powershell :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:11:46 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:11:46 main.go:178: Active Printer :  
+[Druck App]2026/11/15 21:11:47 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 21:11:48 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 21:11:48 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 21:12:41 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 21:12:41 main.go:128: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:12:41 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:12:41 main.go:131: Active Printer :  
+[Druck App]2026/11/15 21:12:41 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 21:12:41 main.go:175: Active Printer Nach Powershell :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:12:41 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:12:41 main.go:178: Active Printer :  
+[Druck App]2026/11/15 21:12:42 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 21:12:43 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 21:12:43 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 21:12:55 main.go:83: Programm beendet !!!
+[Druck App] 2026/11/15 21:47:38 main.go:80: Programm gestartet !!!
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: PDF24
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: OneNote for Windows 10
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: OneNote (Desktop)
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: Microsoft XPS Document Writer
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: Microsoft Print to PDF
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: HP252BFD (HP DeskJet 4300 series)
+[Verfuegbare Drucker]2026/11/15 21:47:40 main.go:250: Fax
+[Druck App]2026/11/15 21:47:49 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 21:47:49 main.go:128: Active Printer :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:47:49 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:47:49 main.go:131: Active Printer :  
+[Druck App]2026/11/15 21:47:49 main.go:143: Wechsle aktiven Drucker zu: PDF24...
+[Druck App]2026/11/15 21:47:49 main.go:147: Powershell:  Set-Printer -Name "PDF24"
+[Druck App]2026/11/15 21:47:51 main.go:158: PowerShell: 
+[Druck App]2026/11/15 21:47:51 main.go:175: Active Printer Nach Powershell :  HP252BFD (HP DeskJet 4300 series)
+[Druck App]2026/11/15 21:47:51 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:47:51 main.go:178: Active Printer :  
+[Druck App]2026/11/15 21:47:53 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 21:47:54 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 21:47:55 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 21:48:21 main.go:123: [Word-Version] : 16.0
+[Druck App]2026/11/15 21:48:21 main.go:128: Active Printer :  PDF24
+[Druck App]2026/11/15 21:48:21 main.go:130: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:48:21 main.go:131: Active Printer :  
+[Druck App]2026/11/15 21:48:21 main.go:143: Wechsle aktiven Drucker zu: HP252BFD (HP DeskJet 4300 series)...
+[Druck App]2026/11/15 21:48:21 main.go:147: Powershell:  Set-Printer -Name "HP252BFD (HP DeskJet 4300 series)"
+[Druck App]2026/11/15 21:48:23 main.go:158: PowerShell: 
+[Druck App]2026/11/15 21:48:23 main.go:175: Active Printer Nach Powershell :  PDF24
+[Druck App]2026/11/15 21:48:23 main.go:177: Active Printer: Clear - Done !
+[Druck App]2026/11/15 21:48:23 main.go:178: Active Printer :  
+[Druck App]2026/11/15 21:48:23 main.go:196: Drucke C:/Users/agnie/go/src/druck/prgit.docx, Seiten 1-2
+[Druck App]2026/11/15 21:48:24 main.go:209: Druckauftrag erfolgreich uebergeben. Datei: C:/Users/agnie/go/src/druck/prgit.docx 
+[Druck App]2026/11/15 21:48:25 main.go:117: Word erfolgreich geschlossen.
+[Druck App]2026/11/15 21:49:14 main.go:83: Programm beendet !!!
